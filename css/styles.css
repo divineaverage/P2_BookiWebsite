@@ -8,13 +8,4 @@
 /* =======================
    Page Styles
    ======================= */
-   @media (min-width: 900px) {  
-      .logo {   
-         display: inline-flex;	
-      }    
-      .main-nav {
-         display: inline-flex;
-         width: 40%;	
-         justify-content:flex-end;
-         background-color: blue;   
-      }
+  
