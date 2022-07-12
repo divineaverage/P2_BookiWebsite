@@ -8,4 +8,11 @@
 /* =======================
    Page Styles
    ======================= */
-  
+   .navbar {
+      display: flex;
+      justify-content: flex-start;
+    }
+    .nav-links {
+      display: flex;
+      justify-content: flex-end;
+    }
