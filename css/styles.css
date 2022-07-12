@@ -14,11 +14,9 @@
   }
   
   #navigation-container {
-      position: relative;
-      background-color: #352d2f;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      flex-flow: row wrap;
+      justify-content: flex-end;
   }
   
   ul {
