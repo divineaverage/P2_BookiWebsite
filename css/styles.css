@@ -9,8 +9,11 @@
    Page Styles
    ======================= */
    body {
-      margin: 30px;
+      margin-top: 30px;
+      margin-right:60px;
+      margin-left: 60px;
       padding: 0;
+      box-sizing: border-box;
   }
   
   .navigation-bar {
@@ -18,10 +21,16 @@
       flex-direction: row;
       justify-content: space-between;
   }
-  
-  .nav-links{
 
+  .logo {
+   max-width: 100%;
+   height: auto;
+ }
+  
+  .links:hover {
+      color: blue;
   }
+
   a {
    text-decoration: none;
    color: black;
