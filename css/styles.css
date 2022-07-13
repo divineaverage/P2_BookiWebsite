@@ -9,9 +9,6 @@
    Page Styles
    ======================= */
 body {
-      margin-top: 30px;
-      margin-right:60px;
-      margin-left: 60px;
       padding: 0;
       box-sizing: border-box;
       font-family: "Raleway", Arial, sans-serif;
@@ -25,6 +22,9 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      margin-top: 30px;
+      margin-right:60px;
+      margin-left: 60px;
 }
 
 .logo {
@@ -45,10 +45,24 @@ a {
       opacity: 0.7;
 }
        /* =======================
+            Section
+         ======================= */
+.search {
+      margin-top: 30px;
+      margin-right: 60px;
+      margin-bottom: 30px;
+      margin-left: 60px; 
+}
+
+
+       /* =======================
             Section/Aside
          ======================= */
 .flex-container {
       display: flex;
+      margin-top: 30px;
+      margin-right:60px;
+      margin-left: 60px;
 }
  
 .accommodations {
@@ -61,6 +75,7 @@ a {
       box-sizing: border-box;
       background-color: #f2f2f2;
       border-radius: 5px;
+      padding: 15px 15px 15px 15px;
 }
 .heading {
       flex:1 0 100%
@@ -71,7 +86,8 @@ a {
       display: flex;
       flex 1: 0 20%;
       flex-direction: column;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2) 
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      padding: 0px 15px 0px 15px;
 }
 .show_more {
       flex:2 0 100%
@@ -86,7 +102,8 @@ a {
       justify-content: center;
       box-sizing: border-box;
       background-color: #f2f2f2;
-      border-radius: 5px; 
+      border-radius: 5px;
+      padding: 15px 15px 15px 15px;
 }
 .asidebox {
       background: white;
@@ -100,6 +117,12 @@ a {
         /* =======================
             Section
          ======================= */
+.activities {
+   margin-top: 30px;
+   margin-right:60px;
+   margin-bottom:60px;
+   margin-left: 60px;
+}         
 .activities-container {
       display: flex;
       flex: 1;
@@ -121,3 +144,38 @@ a {
         /* =======================
            Footer
          ======================= */       
+.ft-main {
+      box-sizing: border-box;
+      font-family: "Raleway", Arial, sans-serif;
+      margin: 0; 
+      padding: 20px 28px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+}
+.ft-main-item {
+      padding: 20px;
+      min-width: 20px;
+}
+   ul {
+      list-style: none;
+      padding-left: 0;
+}
+   footer {
+      background-color: #F2F2F2;
+      color: black;
+      line-height: 1.5;
+      display: flex;
+      min-height: 100vh;
+      flex-direction: row;
+}
+   footer a {
+      text-decoration: none;
+      color: black;
+}
+   a:hover {
+      color: blue;
+}
+.container {
+   flex: 1; 
+}
