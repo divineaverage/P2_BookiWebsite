@@ -9,36 +9,24 @@
    Page Styles
    ======================= */
    body {
-      margin: 0;
+      margin: 30px;
       padding: 0;
   }
   
-  #navigation-container {
-      position: relative;
-      background-color: #352d2f;
+  .navigation-bar {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
   }
   
-  ul {
-      display: flex;
-      flex-direction: row;
-      list-style-type: none;
-      justify-content: flex-end;
+  .nav-links{
+
   }
-  
   a {
-      text-decoration: none;
-      color: black;
-      font-size: 16px;
-      font-family: "Raleway", Arial, sans-serif;
-      padding: 5px 15px;
-      opacity: 0.7;
-  }
-  
-  li {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-  }
+   text-decoration: none;
+   color: black;
+   font-size: 16px;
+   font-family: "Raleway", Arial, sans-serif;
+   padding: 5px 15px;
+   opacity: 0.7;
+}
