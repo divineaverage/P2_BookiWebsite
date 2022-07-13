@@ -25,67 +25,100 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-  }
+}
 
-  .logo {
-   max-width: 100%;
-   height: auto;
-   }
+.logo {
+      max-width: 100%;
+      height: auto;
+}
   
   .links:hover {
       color: blue;
-   }
+}
 
-  a {
-   text-decoration: none;
-   color: black;
-   font-size: 16px;
-   font-family: "Raleway", Arial, sans-serif;
-   padding: 5px 15px;
-   opacity: 0.7;
-   }
+a {
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+      font-family: "Raleway", Arial, sans-serif;
+      padding: 5px 15px;
+      opacity: 0.7;
+}
        /* =======================
             Section/Aside
          ======================= */
 .flex-container {
-   display: flex;
- }
+      display: flex;
+}
  
-   .accommodations {
-   display: flex;
-   flex: 1;
-   min-height: 100%;
-   flex-direction: row;
-   flex-wrap:wrap;
-   justify-content: space-evenly;
-   box-sizing: border-box;
-   background-color: #f2f2f2;
-   border-radius: 5px;
-   }
-      .box {
+.accommodations {
+      display: flex;
+      flex: 1;
+      min-height: 100%;
+      flex-direction: row;
+      flex-wrap:wrap;
+      justify-content: space-evenly;
+      box-sizing: border-box;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+}
+.heading {
+      flex:1 0 100%
+}
+.sectionbox {
       background: white;
       border-radius: 5px;
       display: flex;
       flex 1: 0 20%;
-      flex-direction:column;
-      }
+      flex-direction: column;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2) 
+}
+.show_more {
+      flex:2 0 100%
+}
 
-      .heading {
-      flex:1 0 100%
-      }
-
-   .most_popular {
-   flex: -1;
-   box-sizing: border-box;
-   background-color: #f2f2f2;
-   border-radius: 5px;  
-   }
-
-
+.most_popular {
+      display:flex;
+      flex: -1;
+      min-height: 100%;
+      flex-direction: column;
+      flex-wrap:wrap;
+      justify-content: center;
+      box-sizing: border-box;
+      background-color: #f2f2f2;
+      border-radius: 5px; 
+}
+.asidebox {
+      background: white;
+      border-radius: 5px;
+      display: flex;
+      flex 1: 0 20%;
+      flex-direction: row;
+      justify-content: center;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2) 
+}
         /* =======================
             Section
          ======================= */
-
+.activities-container {
+      display: flex;
+      flex: 1;
+      min-height: 100%;
+      flex-direction: column;
+      flex-wrap:wrap;
+      align-items: space-around;
+      box-sizing: border-box;
+      background-color: white;
+}
+.activitybox {
+      background: white;
+      border-radius: 5px;
+      display: flex;
+      flex 1: 0 20%;
+      flex-direction: row; 
+   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2)  
+}
         /* =======================
            Footer
-         ======================= */        
+         ======================= */       
+ 
