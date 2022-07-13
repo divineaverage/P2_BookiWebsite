@@ -14,9 +14,14 @@
       margin-left: 60px;
       padding: 0;
       box-sizing: border-box;
+      font-family: "Raleway", Arial, sans-serif;
   }
+
   
-  .navigation-bar {
+       /* =======================
+            Header/Nav
+         ======================= */
+.navigation-bar {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -25,11 +30,11 @@
   .logo {
    max-width: 100%;
    height: auto;
- }
+   }
   
   .links:hover {
       color: blue;
-  }
+   }
 
   a {
    text-decoration: none;
@@ -38,4 +43,49 @@
    font-family: "Raleway", Arial, sans-serif;
    padding: 5px 15px;
    opacity: 0.7;
-}
+   }
+       /* =======================
+            Section/Aside
+         ======================= */
+.flex-container {
+   display: flex;
+ }
+ 
+   .accommodations {
+   display: flex;
+   flex: 1;
+   min-height: 100%;
+   flex-direction: row;
+   flex-wrap:wrap;
+   justify-content: space-evenly;
+   box-sizing: border-box;
+   background-color: #f2f2f2;
+   border-radius: 5px;
+   }
+      .box {
+      background: white;
+      border-radius: 5px;
+      display: flex;
+      flex 1: 0 20%;
+      flex-direction:column;
+      }
+
+      .heading {
+      flex:1 0 100%
+      }
+
+   .most_popular {
+   flex: -1;
+   box-sizing: border-box;
+   background-color: #f2f2f2;
+   border-radius: 5px;  
+   }
+
+
+        /* =======================
+            Section
+         ======================= */
+
+        /* =======================
+           Footer
+         ======================= */        
