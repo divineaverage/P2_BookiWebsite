@@ -68,10 +68,11 @@ a {
 .accommodations {
       display: flex;
       flex-grow: 2;
+      flex-wrap: wrap;
       min-height: 100%;
       flex-direction: row;
       flex-wrap:wrap;
-      justify-content: space-evenly;
+      justify-content: space-around;
       box-sizing: border-box;
       background-color: #f2f2f2;
       border-radius: 5px;
@@ -172,4 +173,16 @@ a {
 }
 .container {
    flex: 1; 
+}
+/* On screens with max width of 992px */
+@media screen and (max-width: 992px) {
+/* Write your CSS properties here */
+}
+/* On screens between 768 and 992 */
+@media all and (min-width: 768px) and (max-width: 992px) {
+/* Write your CSS properties here */
+}
+/* On mobile */
+@media all and (max-device-width: 480px) {
+/* Your CSS rules for your mobile phones here */
 }
