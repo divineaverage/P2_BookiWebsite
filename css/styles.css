@@ -67,7 +67,7 @@ a {
  
 .accommodations {
       display: flex;
-      flex: 1;
+      flex-grow: 2;
       min-height: 100%;
       flex-direction: row;
       flex-wrap:wrap;
@@ -94,8 +94,8 @@ a {
 
 .most_popular {
       display:flex;
-      flex: -1;
       min-height: 100%;
+      flex-grow: 1;
       flex-direction: column;
       flex-wrap:wrap;
       justify-content: center;
