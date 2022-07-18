@@ -1,11 +1,5 @@
 
 /* =======================
-   Normalize.css
-   ======================= */
-
-@import 'normalize.css';
-
-/* =======================
    Page Styles
    ======================= */
 body {
@@ -48,13 +42,76 @@ a {
             Section
          ======================= */
 .search {
-      margin-top: 30px;
-      margin-right: 60px;
-      margin-bottom: 30px;
-      margin-left: 60px; 
+      display:flex;
+      min-height: 100%;
+      min-width: 100px;
+      position: relative;
+      flex-grow: 1;
+      flex-direction: column;
+      flex-wrap:wrap;
+      justify-content: flex-start;
+      margin: 0px 0px 50px 0px;
 }
 
+h2 {
+   line-height: 0px;
+}
 
+.nested-flex-search {
+      display: flex;
+      position: relative;
+      min-width: 100px;
+      position: relative;
+}
+
+i {
+   font-style: bold;
+   background: #F2F2F2;
+   color: black;
+   border: none;
+   padding: 20px 35px 20px 15px;
+   text-align: left;
+   text-decoration: none;
+   display: inline-block;
+   border-radius: 10px;
+   font-size: 16px;
+   position: absolute;
+   top: 0
+   left: 1%;
+   
+ }
+
+ input[type=text] {
+    position: relative;
+   font-size: 18px;
+   color: black;
+   border-color: #F2F2F2;
+   border-style: solid;
+   padding: 16px 65px 15px 12px;
+   position: absolute;
+   top: 0;
+   left: 2.5%;
+   font-family: "Raleway SemiBold", Arial, sans-serif;
+ }
+
+ button {
+   font-style: bold;
+   background: #0065FC;
+   color: white;
+   border: none;
+   padding: 7px 5px 7px 5px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   border-radius: 10px;
+   font-size: 16px;
+   padding: 19px 20px 19px 40px;
+   position: absolute;
+   top: 0;
+   left: 17%;
+   font-family: "Raleway SemiBold", Arial, sans-serif;
+ }
+ 
        /* =======================
             Section/Aside
          ======================= */
@@ -66,73 +123,79 @@ a {
 }
  
 .accommodations {
-      display: flex;
-      flex-grow: 2;
-      flex-wrap: wrap;
+      display:flex;
       min-height: 100%;
-      flex-direction: row;
+      flex-grow: 2;
+      flex-direction: column;
       flex-wrap:wrap;
-      justify-content: space-around;
-      box-sizing: border-box;
+      justify-content: flex-start;
       background-color: #f2f2f2;
-      border-radius: 5px;
+      border-radius: 10px;
       padding: 15px 15px 15px 15px;
 }
-.heading {
-      flex:1 0 100%
+.nested-accommodations {
+   display: flex;
+   justify-content: space-around;
 }
+
 .sectionbox {
       background: white;
-      border-radius: 5px;
-      display: flex;
-      flex-direction: column;
+      border-radius: 10px;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
       padding: 0px 15px 0px 15px;
-}
-.show_more {
-      flex:2 0 100%
 }
 
 .most_popular {
       display:flex;
+      align-content: flex-start;
       min-height: 100%;
       flex-grow: 1;
-      flex-direction: column;
-      flex-wrap:wrap;
+      flex-flow: column wrap;
       justify-content: center;
       box-sizing: border-box;
       background-color: #f2f2f2;
-      border-radius: 5px;
+      border-radius: 10px;
       padding: 15px 15px 15px 15px;
 }
 .asidebox {
       background: white;
-      border-radius: 5px;
+      border-radius: 10px;
       display: flex;
-      flex-direction: row;
       justify-content: center;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2) 
 }
         /* =======================
             Section
          ======================= */
+.activities-container {
+            display: flex;
+            margin-top: 30px;
+            margin-right:60px;
+            margin-left: 60px;
+}
+   
 .activities {
       margin-top: 30px;
       margin-right:60px;
       margin-bottom:60px;
       margin-left: 60px;
       display: flex;
-      flex: 1;
       min-height: 100%;
-      flex-direction: row;
+      flex-direction: column;
       flex-wrap:wrap;
-      box-sizing: border-box;
+      justify-content: flex-start;
       background-color: white;
       justify-content: space-around;
 }
+
+.nested-activities {
+   display: flex;
+   justify-content: space-around;
+}
+
 .activitybox {
       background: white;
-      border-radius: 5px;
+      border-radius: 10px;
       display: flex;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2)  
 }

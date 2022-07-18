@@ -12,7 +12,9 @@
   <link rel="icon" href="/favicon.ico">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <script src="https://kit.fontawesome.com/f855a369c6.js" crossorigin="anonymous"></script>
 
+  <link type="text/css" rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="css/styles.css?v=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,27 +33,31 @@
     </div>
   </nav>
 
-  <section class="search">
-    <h2>Find a place for your dream vacation</h2>
-    <p>Downtown or in nature</p>
-  </section>
+  <div class="flex-container">
+    <section class="search">
+      <h2>Find a place for your dream vacation</h2>
+      <p>Downtown or in nature</p>
+      <div class="nested-flex-search">
+        <i class="fa-solid fa-location-dot"></i>
+        <button class="Search">Search</button>
+        <input class="search" placeholder="Marseille, France" type="text">
+        </section>
+      </div>
+    </section>
+  </div>
 
   <div class="flex-container">
     <section class="accommodations">
-      <div class="heading"><h2>Accommodations in Marseilles</h2></div>
-      <div class="row">
+      <h2>Accommodations in Marseille</h2>
+      <div class="nested-accommodations">
         <div class="sectionbox">box1</div>
         <div class="sectionbox">box2</div>
-      </div>
-      <div class="row">
         <div class="sectionbox">box3</div>
         <div class="sectionbox">box4</div>
-      </div>
-      <div class="row">
         <div class="sectionbox">box5</div>
         <div class="sectionbox">box6</div>
       </div>
-      <div class="show_more">Show more</div>
+      <p>Show more</p>
     </section>
 
     <aside class="most_popular" >
@@ -65,21 +71,16 @@
 
   <div class="activities-container"></div>
   <section class="activities">
-    <div class="heading"><h2>Activities in Marseilles</h2></div>
-      <div class="column">
-        <div class="activitybox">box1</div>
+    <h2>Activities in Marseille</h2>
+    <div class="nested-activities">
+      <div class="activitybox">box1</div>
+      <div class="activitybox">box2</div>
+      <div class="activitybox">box3</div>
+      <div class="activitybox">box4</div>
+      <div class="activitybox">box5</div>
+      <div class="activitybox">box6</div>
       </div>
-      <div class="column">
-        <div class="activitybox">box2</div>
-        <div class="activitybox">box3</div>
-      </div>
-      <div class="column">
-        <div class="activitybox">box4</div>
-      </div>
-      <div class="column">
-        <div class="activitybox">box5</div>
-        <div class="activitybox">box6</div>
-      </div>
+    </div>
   </div>
   </section>
 </body>
