@@ -26,7 +26,7 @@ body {
       height: auto;
 }
   
-  .links:hover {
+.links:hover {
       color: blue;
 }
 
@@ -41,86 +41,89 @@ a {
        /* =======================
             Section
          ======================= */
+.flex-container {
+   display: flex;
+   margin-top: 30px;
+   margin-right:60px;
+   margin-left: 60px;
+}
+
 .search {
-      display:flex;
-      min-height: 100%;
-      min-width: 100px;
-      position: relative;
-      flex-grow: 1;
-      flex-direction: column;
-      flex-wrap:wrap;
-      justify-content: flex-start;
-      margin: 0px 0px 50px 0px;
+   display:flex;
+   min-height: 100%;
+   min-width: 100px;
+   flex-grow: 1;
+   flex-direction: column;
+   flex-wrap:wrap;
+   justify-content: flex-start;
+   margin: 0px 0px 70px 0px;
 }
 
 h2 {
    line-height: 0px;
 }
 
-.nested-flex-search {
-      display: flex;
-      position: relative;
-      min-width: 100px;
-      position: relative;
+.wrapper {
+   display: flex;
+   min-width: 100px;
+   max-width: 400px;
+   position: relative;
 }
 
-i {
+ i {
    font-style: bold;
    background: #F2F2F2;
    color: black;
    border: none;
-   padding: 20px 35px 20px 15px;
-   text-align: left;
+   padding: 15px 20px 20px 20px;
+   text-align: center;
    text-decoration: none;
-   display: inline-block;
    border-radius: 10px;
-   font-size: 16px;
+   font-size: 20px;
+   font-family: "Raleway SemiBold", Arial, sans-serif;
+   width: 20px;
    position: absolute;
-   top: 0
-   left: 1%;
-   
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
  }
 
  input[type=text] {
-    position: relative;
    font-size: 18px;
    color: black;
+   height: 42px;
+   width: 100%;
+   padding: 2px 35px 2px 95px;
    border-color: #F2F2F2;
    border-style: solid;
-   padding: 16px 65px 15px 12px;
-   position: absolute;
-   top: 0;
-   left: 2.5%;
+   border-radius: 10px;
    font-family: "Raleway SemiBold", Arial, sans-serif;
  }
-
+ 
  button {
    font-style: bold;
    background: #0065FC;
    color: white;
    border: none;
-   padding: 7px 5px 7px 5px;
    text-align: center;
    text-decoration: none;
-   display: inline-block;
    border-radius: 10px;
    font-size: 16px;
-   padding: 19px 20px 19px 40px;
+   font-family: "Raleway SemiBold", Arial, sans-serif;
+   width: 100px;
    position: absolute;
    top: 0;
-   left: 17%;
-   font-family: "Raleway SemiBold", Arial, sans-serif;
+   bottom: 0;
+   left: 100;
+   right: 0;
+   
  }
  
        /* =======================
             Section/Aside
          ======================= */
-.flex-container {
-      display: flex;
-      margin-top: 30px;
-      margin-right:60px;
-      margin-left: 60px;
-}
+
  
 .accommodations {
       display:flex;
@@ -243,9 +246,62 @@ i {
 }
 /* On screens between 768 and 992 */
 @media all and (min-width: 768px) and (max-width: 992px) {
-/* Write your CSS properties here */
+
+.ft-main {
+   flex-flow: column wrap; 
+   align-content: flex-start; 
+   justify-content: flex-start;
+}
 }
 /* On mobile */
 @media all and (max-device-width: 480px) {
-/* Your CSS rules for your mobile phones here */
+
+.logo {
+   display: block;
+   width: 100px;
+   height: 50px;
+   margin: auto;
+   padding: 0px 0px 50px 0px;
 }
+
+.navigation-bar {
+   display: flex;
+   flex-direction: column;
+   
+   margin-top: 20px;
+   margin-right:30px;
+   margin-left: 30px;
+}
+
+.nav-links {
+   width: 100%;
+}
+
+.flex-container {
+   display: flex;
+   flex-flow: column wrap;
+   margin-top: 30px;
+   margin-right:30px;
+   margin-left: 30px;
+}
+
+.search {
+   display: flex;
+   min-height: 100%;
+   min-width: 100px;
+   flex-grow: 1;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   margin: 0px 0px 70px 0px;
+   line-height: 15px;
+   font-size: 12px;
+}
+
+.ft-main {
+   flex-flow: column wrap; 
+   align-content: flex-start; 
+   justify-content: flex-start;
+}
+}
+
