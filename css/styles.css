@@ -19,6 +19,7 @@ body {
       margin-top: 30px;
       width: 100%;
       box-sizing: border-box;
+      padding: 0px 60px 0px 60px;
 }
 
 
@@ -50,9 +51,9 @@ a {
    min-width: 100px;
    flex-grow: 1;
    flex-direction: column;
-   flex-wrap:wrap;
+   flex-wrap: wrap;
    justify-content: flex-start;
-   margin: 0px 0px 70px 0px;
+   margin: 30px 0px 70px 0px;
 }
 
 h2 {
@@ -64,6 +65,7 @@ h2 {
    min-width: 100px;
    max-width: 400px;
    position: relative;
+   margin-top: 20px;
 }
 
 .dot-icon {
@@ -110,17 +112,80 @@ h2 {
    bottom: 0;
    left: 100;
    right: 0;
-   
+ }
+
+ .filters {
+   display: flex;
+   margin-top: 30px;
+   margin-right:0px;
+   margin-left: 0px;
+   justify-content: space-evenly;
+   gap: 20px;
+   width: 66%;
+   margin-top: 20px;
+   text-align: center;
+ }
+
+ .pillwrap {
+   border-color: lightgrey;
+   border-style: solid;
+   border-width: 1px;
+   border-radius: 50px;
+   padding: 15px 25px 0px 40px;
+   position: relative;
+   font-size: 16px;
+ }
+
+ .filterpill {
+   padding: 0px 0px 0px 30px;
+   text-decoration: none;
+ }
+
+ .circle {
+   color:#0065FC;
+   text-align: center;
+   text-decoration: none;
+   font-size: 20px;
+   background-color: #DEEBFF;
+   width: 50px;
+   height: 50px;
+   border-color: #DEEBFF;
+   border-style: solid;
+   border-width: 1px;
+   border-radius: 50px;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+ }
+
+ .tooltip {
+   padding: 60px 0px 0px 0px;
  }
  
+ .fa-info {
+   color:#0065FC;
+   text-align: center;
+   text-decoration: none;
+   font-size: 14px;
+   background-color: transparent;
+   width: 30px;
+   height: 30px;
+   border-color: #DEEBFF;
+   border-style: solid;
+   border-width: 1px;
+   border-radius: 50px;
+ }
        /* =======================
             Section/Aside
          ======================= */
 .flex-container {
    display: flex;
-   margin-top: 30px;
    margin-right:60px;
    margin-left: 60px;
+   margin-top: 0px;
+   margin-bottom: 0px;
 }
  
 .accommodations {
@@ -128,7 +193,7 @@ h2 {
    min-height: 100%;
    flex-grow: 2;
    flex-direction: column;
-   flex-wrap:wrap;
+   flex-wrap: wrap;
    justify-content: flex-start;
    background-color: #f2f2f2;
    border-radius: 10px;
