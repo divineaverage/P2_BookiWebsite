@@ -24,62 +24,54 @@
    
 
 <body>
-
-  <nav class="navigation-bar">
-    <img class="logo" src="images/logo/Booki.png" alt="Booki logo" width="100" height="100">
-    <div class="nav-links">
-      <a class="links" href="#accommodations">Accommodations</a>
-      <a class="links" href="#activities">Activities</a>
-    </div>
-  </nav>
-
-  <div class="flex-container">
-    <section class="search">
-      <h2>Find a place for your dream vacation</h2>
-      Downtown or in nature
-      <div class="wrapper">
-        <span class="dot-icon"><i class="fa-solid fa-location-dot"></i></span>
-        <input class="searchbar" placeholder="Marseille, France" type="text"></input>
-        <button class="Searchbutton">Search</button>
-        <span class="mag-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+  <header>
+    <nav class="navigation-bar">
+      <img class="logo" src="images/logo/Booki.png" alt="Booki logo" width="100" height="100">
+      <div class="nav-links">
+        <a class="links" href="#accommodations">Accommodations</a>
+        <a class="links" href="#activities">Activities</a>
       </div>
-    </div>
-  <div class="filters">
-        <strong>Filters</strong>
+    </nav>
+  </header>
+
+  <main>
+    <div class="flex-container">
+      <section class="search">
+        <h2>Find a place for your dream vacation</h2>
+        <span class="subheader">Downtown or in nature</span> 
+        <div class="wrapper">
+          <span class="dot-icon"><i class="fa-solid fa-location-dot"></i></span>
+          <input class="searchbar" placeholder="Marseille, France" type="text"></input>
+          <button class="Searchbutton">Search</button>
+          <span class="mag-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+      </div>
+    <div class="filters">
+        <span class="filter_label">Filters</span>
         <div class="pillwrap">
-          <div class="filterpill">
             <div class="circle"><i class="fa-solid fa-money-bill-wave"></i></div>
-            <strong>Low cost</strong>
-          </div>
+            <span class="filter_label">Low cost</span>
         </div>
         <div class="pillwrap">
-          <div class="filterpill">
             <div class="circle"><i class="fa-solid fa-child-reaching"></i></div>
-            <strong>Family-friendly</strong>
-          </div>
+            <span class="filter_label">Family-friendly</span>
         </div>
         <div class="pillwrap">
-          <div class="filterpill">
             <div class="circle"><i class="fa-solid fa-heart"></i></div>
-            <strong>Romantic</strong>
-          </div>
+            <span class="filter_label">Romantic</span>
         </div>
         <div class="pillwrap">
-          <div class="filterpill">
             <div class="circle"><i class="fa-solid fa-dog"></i></div>
-            <strong>Pets allowed</strong>
-          </div>
+            <span class="filter_label">Pets allowed</span>
         </div>
       </div>
       <div class="tooltip">
         <div class="tooltip-icon"></div>
         <i class="fa-solid fa-info"></i>
-        More than 500 accommodations are available in this city.
+        <span class="tooltip_capt">More than 500 accommodations are available in this city.</span>
       </div>
-
     </section>
   </div>
-
   <div class="flex-container">
     <section class="accommodations">
       <div id="accommodations"><h2>Accommodations in Marseille</h2></div>
@@ -99,7 +91,6 @@
       <div class="asidebox">box3</div>
     </aside>
   </div>
-
   <div class="activities-container"></div>
   <section class="activities">
     <div id="activities"><h2>Activities in Marseille</h2></div>
@@ -114,8 +105,9 @@
     </div>
   </div>
   </section>
-</body>
-  <footer class="ft-main">
+</main>
+
+<footer class="ft-main">
         <div class="ft-main-item">
           <h2 class="ft-title">About</h2>
           <ul>
@@ -138,7 +130,7 @@
             <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
-    </footer>
+</footer>
 
-
+</body>
 </html>
