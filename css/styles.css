@@ -53,7 +53,7 @@ a {
 }
 
 h2 {
-   line-height: 0px;
+   line-height: 20px;
 }
 
 .wrapper {
@@ -65,16 +65,15 @@ h2 {
 }
 
 .dot-icon {
-   font-style: bold;
    background: #F2F2F2;
    color: black;
    border: none;
-   padding: 15px 20px 20px 20px;
+   padding: 15px 15px 20px 15px;
    text-align: center;
    text-decoration: none;
    border-top-left-radius: 10px;
    border-bottom-left-radius: 10px;
-   font-size: 20px;
+   font-size: 18px;
    width: 20px;
    position: absolute;
    top: 0;
@@ -95,6 +94,7 @@ h2 {
 
  input::placeholder {
    color: black;
+   text-align: start;
  }
  
  button {
@@ -198,6 +198,7 @@ h2 {
    margin-left: 60px;
    margin-top: 0px;
    margin-bottom: 0px;
+   line-height: 20px;
 }
  
 .accommodations {
@@ -412,6 +413,12 @@ input {
 
 button {
    display: none;
+}
+
+.filters {
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: flex-start;
 }
 
 .mag-icon {
