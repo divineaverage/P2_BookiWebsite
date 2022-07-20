@@ -21,10 +21,7 @@ body {
       box-sizing: border-box;
 }
 
-.nav-links{
-   
-   flex-grow: 1;
-}
+
 
 .logo {
       max-width: 100%;
@@ -39,19 +36,13 @@ a {
       text-decoration: none;
       color: black;
       font-size: 16px;
-      font-family: "Raleway", Arial, sans-serif;
       padding: 5px 15px;
       opacity: 0.7;
 }
        /* =======================
             Section
          ======================= */
-.flex-container {
-   display: flex;
-   margin-top: 30px;
-   margin-right:60px;
-   margin-left: 60px;
-}
+
 
 .search {
    display:flex;
@@ -75,7 +66,7 @@ h2 {
    position: relative;
 }
 
- i {
+.dot-icon {
    font-style: bold;
    background: #F2F2F2;
    color: black;
@@ -85,7 +76,6 @@ h2 {
    text-decoration: none;
    border-radius: 10px;
    font-size: 20px;
-   font-family: "Raleway SemiBold", Arial, sans-serif;
    width: 20px;
    position: absolute;
    top: 0;
@@ -103,7 +93,6 @@ h2 {
    border-color: #F2F2F2;
    border-style: solid;
    border-radius: 10px;
-   font-family: "Raleway SemiBold", Arial, sans-serif;
  }
  
  button {
@@ -115,7 +104,6 @@ h2 {
    text-decoration: none;
    border-radius: 10px;
    font-size: 16px;
-   font-family: "Raleway SemiBold", Arial, sans-serif;
    width: 100px;
    position: absolute;
    top: 0;
@@ -128,42 +116,48 @@ h2 {
        /* =======================
             Section/Aside
          ======================= */
-
+.flex-container {
+   display: flex;
+   margin-top: 30px;
+   margin-right:60px;
+   margin-left: 60px;
+}
  
 .accommodations {
-      display:flex;
-      min-height: 100%;
-      flex-grow: 2;
-      flex-direction: column;
-      flex-wrap:wrap;
-      justify-content: flex-start;
-      background-color: #f2f2f2;
-      border-radius: 10px;
-      padding: 15px 15px 15px 15px;
+   display:flex;
+   min-height: 100%;
+   flex-grow: 2;
+   flex-direction: column;
+   flex-wrap:wrap;
+   justify-content: flex-start;
+   background-color: #f2f2f2;
+   border-radius: 10px;
+   padding: 15px 15px 15px 15px;
 }
+
 .nested-accommodations {
    display: flex;
    justify-content: space-around;
 }
 
 .sectionbox {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-      padding: 0px 15px 0px 15px;
+   background: white;
+   border-radius: 10px;
+   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+   padding: 0px 15px 0px 15px;
 }
 
 .most_popular {
-      display:flex;
-      align-content: flex-start;
-      min-height: 100%;
-      flex-grow: 1;
-      flex-flow: column wrap;
-      justify-content: center;
-      box-sizing: border-box;
-      background-color: #f2f2f2;
-      border-radius: 10px;
-      padding: 15px 15px 15px 15px;
+   display:flex;
+   align-content: flex-start;
+   min-height: 100%;
+   flex-grow: 1;
+   flex-flow: column wrap;
+   justify-content: center;
+   box-sizing: border-box;
+   background-color: #f2f2f2;
+   border-radius: 10px;
+   padding: 15px 15px 15px 15px;
 }
 .asidebox {
       background: white;
@@ -279,6 +273,7 @@ h2 {
 
 .nav-links {
    justify-content: space-around;
+   flex-grow: 1;
 }
 
 .links:hover {
@@ -305,8 +300,72 @@ h2 {
    flex-wrap: wrap;
    justify-content: flex-start;
    margin: 0px 0px 70px 0px;
-   line-height: 15px;
+   line-height: 16px;
    font-size: 12px;
+}
+
+.wrapper {
+   display: flex;
+   min-width: 100px;
+   max-width: 400px;
+   position: relative;
+}
+
+dot-icon {
+   padding: 12px 0px 0px 0px;
+   text-align: center;
+   text-decoration: none;
+   border-radius: 10px;
+   font-size: 20px;
+   width: 10px;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+}
+
+input {
+   font-size: 16px;
+   color: black;
+   height: 42px;
+   width: 100%;
+   padding: 2px 35px 2px 95px;
+   border-color: #F2F2F2;
+   border-style: solid;
+   border-radius: 10px;
+}
+
+button {
+   display: none;
+}
+
+.mag-icon {
+   background: #0065FC;
+   color: white;
+   border: none;
+   text-align: center;
+   text-decoration: none;
+   border-radius: 10px;
+   font-size: 17px;
+   width: 10px;
+   padding: 15px 20px 0px 15px;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 100;
+   right: 0;
+}
+
+.accommodations {
+   line-height: 16;
+   font-size: 12;
+}
+
+.nested-accommodations {
+   display: flex;
+   justify-content: space-around;
+   flex-direction: column;
 }
 
 .ft-main {
