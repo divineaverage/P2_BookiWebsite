@@ -3,38 +3,38 @@
    Page Styles
    ======================= */
 body {
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Raleway", Arial, sans-serif;
-  }
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Raleway", Arial, sans-serif;
+}
        /* =======================
             Header/Nav
          ======================= */
 .navigation-bar {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-top: 30px;
-      width: 100%;
-      box-sizing: border-box;
-      padding: 0px 60px 0px 60px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: 30px;
+   width: 100%;
+   box-sizing: border-box;
+   padding: 0px 60px 0px 60px;
 }
 
 .logo {
-      max-width: 100%;
-      height: auto;
+   max-width: 100%;
+   height: auto;
 }
   
 .links:hover {
-      color: blue;
+   color: blue;
 }
 
 a {
-      text-decoration: none;
-      color: black;
-      font-size: 16px;
-      padding: 5px 15px;
-      opacity: 0.7;
+   text-decoration: none;
+   color: black;
+   font-size: 16px;
+   padding: 5px 15px;
+   opacity: 0.7;
 }
        /* =======================
             Section
@@ -52,9 +52,7 @@ a {
    margin: 30px 0px 20px 0px;
 }
 
-h2 {
-   line-height: 20px;
-}
+
 
 .wrapper {
    display: flex;
@@ -161,12 +159,11 @@ h2 {
    font-weight: 600;
    flex-direction: row;
    flex-wrap: wrap;
-   padding: 15px 20px 0px 20px;
+   padding: 15px 20px 0px 0px;
  }
 
  .tooltip {
    padding: 60px 0px 0px 0px;
-   margin-right:60px;
    margin-left: 60px;
    margin-bottom: 30px;
  }
@@ -187,7 +184,7 @@ h2 {
  }
 
  .tooltip_capt {
-   margin-left: 10px;
+   margin-left: 5px;
  }
        /* =======================
             Section/Aside
@@ -203,26 +200,80 @@ h2 {
  
 .accommodations {
    display:flex;
+   box-sizing: border-box;
    min-height: 100%;
-   flex-grow: 2;
+   flex: 2 0 66%;
    flex-direction: column;
-   flex-wrap: wrap;
    justify-content: flex-start;
    background-color: #f2f2f2;
    border-radius: 10px;
-   padding: 15px 15px 15px 15px;
+   padding: 15px 30px 15px 30px;
+   margin: 15px;
 }
 
 .nested-accommodations {
    display: flex;
-   justify-content: space-around;
+   flex-direction: row;
+   flex-wrap: wrap;
 }
 
-.sectionbox {
+.accommo_card {
+   display: flex;
+   box-sizing: border-box;
+   flex-direction: column;
    background: white;
-   border-radius: 10px;
+   border-radius: 20px;
    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-   padding: 0px 15px 0px 15px;
+   padding: 5px 5px 0px 5px;
+   flex: 1 0 25%; 
+   margin: 5px;
+  
+}
+
+.accommo_imgbox {
+   display: inline-block; 
+   box-sizing: border-box;
+   height: 125px;
+   overflow: hidden; 
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+}
+
+.accommo_img { 
+   box-sizing: border-box;
+   width: 100%; 
+   margin-top: -30px;
+}
+
+.card_header {
+   font-weight: 600;
+   padding: 8px 10px 0px 10px;
+}
+
+.card_price {
+   padding: 8px 10px 0px 10px;
+}
+
+.pricing {
+   font-weight: 600;
+}
+
+.stars {
+   display: flex;
+   flex-direction: row;
+   padding: 8px 10px 12px 10px;
+}
+.fa-star.full {
+   color:#0065FC;
+}
+
+.fa-star.empty {
+   color: lightgrey;
+}
+
+.showmore {
+   font-weight: 600;
+   padding: 30px 0px 30px 5px;
 }
 
 .most_popular {
@@ -235,14 +286,44 @@ h2 {
    box-sizing: border-box;
    background-color: #f2f2f2;
    border-radius: 10px;
-   padding: 15px 15px 15px 15px;
+   padding: 15px 30px 15px 30px;
+   margin: 15px;
 }
 .asidebox {
-      background: white;
-      border-radius: 10px;
-      display: flex;
-      justify-content: center;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2) 
+   display: flex;
+   box-sizing: border-box;
+   flex-direction: row;
+   background: white;
+   border-radius: 20px;
+   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+   padding: 5px 5px 0px 5px;
+}
+
+.popular_imgbox {
+   display: inline-block; 
+   box-sizing: border-box;
+   flex-direction: column;
+   width: 225px;
+   height: 200px;
+   overflow: hidden; 
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+}
+
+.popular_copy {
+   display: flex;
+   flex-direction: column;
+   justify-content:space-around;
+   padding: 0px 20px 0px 20px;
+}
+
+.popcard_header {
+   font-weight: 600;
+}
+.popcard_price {
+}
+.pop_pricing {
+   font-weight: 600;
 }
         /* =======================
             Section
