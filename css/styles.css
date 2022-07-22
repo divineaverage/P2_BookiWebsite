@@ -84,7 +84,7 @@ a {
    font-size: 18px;
    height: 42px;
    width: 100%;
-   padding: 2px 35px 2px 95px;
+   padding: 2px 35px 2px 65px;
    border-color: #F2F2F2;
    border-style: solid;
    border-radius: 10px;
@@ -237,16 +237,18 @@ a {
 .accommo_imgbox {
    display: inline-block; 
    box-sizing: border-box;
-   height: 125px;
+   position: relative;
+   height: 120px;
+   width: 250px;
    overflow: hidden; 
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
 }
 
 .accommo_img { 
-   box-sizing: border-box;
-   width: 100%; 
-   margin-top: -30px;
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
 }
 
 .card_header {
@@ -295,9 +297,19 @@ a {
    margin-right: 15px;
 }
 
+.header_and_star {
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+}
+
 .mostpop_header {
-   margin-top: 30px;
    margin-left: 30px;
+}
+
+.fa-star.black {
+   font-size: 40;
+   padding: 25px 20px 0px 0px;
 }
 
 .asidebox {
@@ -314,18 +326,18 @@ a {
 .popular_imgbox {
    display: inline-block; 
    box-sizing: border-box;
-   width: 140px;
-   height: 150px;
+   position: relative;
+   height: 145px;
+   width: 125px;
    overflow: hidden; 
    border-top-left-radius: 20px;
    border-bottom-left-radius: 20px;
-   
 }
 
 .popular_img {
-   box-sizing: border-box;
+   object-fit: cover;
+   width: 100%;
    height: 100%;
-   margin:0 -30%;
 }
 
 .popular_copy {
