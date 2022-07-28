@@ -1,16 +1,13 @@
 
-/* =======================
-   Page Styles
-   ======================= */
 body {
    padding: 0;
    box-sizing: border-box;
    font-family: "Raleway", Arial, sans-serif;
 }
-       /* =======================
-            Header/Nav
-         ======================= */
-.navigation-bar {
+ /* =======================
+    Header/Nav
+  ======================= */
+.navigation_bar {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -24,21 +21,37 @@ body {
    max-width: 100%;
    height: auto;
 }
-  
-.links:hover {
-   color: blue;
-}
 
-a {
+
+.links:link { 
    text-decoration: none;
    color: black;
    font-size: 16px;
-   padding: 5px 15px;
    opacity: 0.7;
+   text-decoration: none; 
+   padding: 0px 20px 0px 20px;
 }
-       /* =======================
-            Section
-         ======================= */
+
+.links:visited { 
+   text-decoration: none; 
+   padding: 0px 20px 0px 20px;
+}
+
+.links:active { 
+   text-decoration: none; 
+   padding: 0px 20px 0px 20px;
+}
+
+.links:hover {
+   color: blue;
+   padding: 0px 20px 0px 20px;
+}
+
+
+
+/* =======================
+    Search and Filters
+======================= */
 
 
 .search {
@@ -53,7 +66,6 @@ a {
 }
 
 
-
 .wrapper {
    display: flex;
    min-width: 100px;
@@ -62,7 +74,7 @@ a {
    margin-top: 20px;
 }
 
-.dot-icon {
+.dot_icon {
    background: #F2F2F2;
    color: black;
    border: none;
@@ -80,7 +92,7 @@ a {
    right: 0;
  }
 
- input[type=text] {
+.search_bar[type=text] {
    font-size: 18px;
    height: 42px;
    width: 100%;
@@ -90,12 +102,12 @@ a {
    border-radius: 10px;
  }
 
- input::placeholder {
+ .search_bar::placeholder {
    color: black;
    text-align: start;
  }
  
- button {
+ .search_button {
    font-style: bold;
    background: #0065FC;
    color: white;
@@ -138,6 +150,11 @@ a {
    justify-content: flex-start;
  }
 
+ .pillwrap:hover {
+   background-color: #0065FC;
+   color: white;
+ }
+
  .circle {
    box-sizing: border-box;
    color:#0065FC;
@@ -154,6 +171,7 @@ a {
    padding: 10px 3px 0 3px;
    margin-right: 10px;
  }
+
 
  .filter_label {
    display: flex;
@@ -187,10 +205,11 @@ a {
  .tooltip_capt {
    margin-left: 5px;
  }
-       /* =======================
-            Section/Aside
-         ======================= */
-.flex-container {
+
+/* ======================================
+    Accommodations and Most Popular
+====================================== */
+.flex_container {
    display: flex;
    margin-right:60px;
    margin-left: 60px;
@@ -216,7 +235,7 @@ a {
    margin-left: 30px;
 }
 
-.nested-accommodations {
+.nested_accommodations {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
@@ -231,25 +250,23 @@ a {
    border-radius: 20px;
    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
    padding: 5px 5px 0px 5px;
-   flex: 1 0 25%; 
+   flex: 1 0 27%; 
    margin: 15px;
 }
 
 .accommo_imgbox {
-   display: inline-block; 
    box-sizing: border-box;
    position: relative;
    height: 120px;
-   width: 250px;
    overflow: hidden; 
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
 }
 
 .accommo_img { 
-   object-fit: cover;
    width: 100%;
    height: 100%;
+   object-fit: cover;
 }
 
 .card_header {
@@ -278,10 +295,15 @@ a {
    color: lightgrey;
 }
 
-.showmore {
+.show_more {
    font-weight: 600;
    padding: 30px 0px 30px 5px;
    margin-left: 30px;
+   text-decoration: none;
+}
+
+.show_more:hover {
+   color: blue
 }
 
 .most_popular {
@@ -313,7 +335,7 @@ a {
    padding: 25px 20px 0px 0px;
 }
 
-.asidebox {
+.popular_card {
    display: flex;
    box-sizing: border-box;
    flex-direction: row;
@@ -324,8 +346,7 @@ a {
    margin: 15px;
 }
 
-.popular_imgbox {
-   display: inline-block; 
+.popular_imgbox { 
    box-sizing: border-box;
    position: relative;
    height: 145px;
@@ -333,6 +354,7 @@ a {
    overflow: hidden; 
    border-top-left-radius: 20px;
    border-bottom-left-radius: 20px;
+   flex-shrink: 0;
 }
 
 .popular_img {
@@ -358,10 +380,10 @@ a {
    font-weight: 600;
 }
 
-        /* =======================
-            Section
-         ======================= */
-.activities-container {
+/* =======================
+    Activities
+======================= */
+.activities_container {
    display: flex;
    margin-right:60px;
    margin-left: 60px;
@@ -402,13 +424,10 @@ a {
    background: white;
    border-radius: 20px;
    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-   height: 100%;
 }
 
 .activity_imgbox {
-   display: inline-block; 
    box-sizing: border-box;
-   position: relative;
    height: 375px;
    width: 300px;
    overflow: hidden; 
@@ -429,72 +448,82 @@ a {
 
 .activity_column {
    display: flex;
-   flex-flow: column nowrap;
-   height: 425px;
+   flex-direction: column;
    justify-content: space-between;
-   gap: 35px;
    height: 100%;
 }
 
-.activity_imgbox_upper {
-   display: inline-block; 
+.activity_card_upper {
+   display: flex;
    box-sizing: border-box;
-   position: relative;
-   flex-shrink: 1;
+   flex-direction: column;
+   background: white;
+   border-radius: 20px;
+   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.activity_card_lower {
+   display: flex;
+   box-sizing: border-box;
+   flex-direction: column;
+   background: white;
+   border-radius: 20px;
+   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.activity_imgbox_small {
+   display: flex; 
+   box-sizing: border-box;
    width: 300px;
    overflow: hidden; 
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
 }
 
-.activity_imgbox_lower {
-   display: inline-block; 
-   box-sizing: border-box;
-   position: relative;
-   flex-shrink: 2;
-   width: 300px;
-   overflow: hidden; 
-   border-top-left-radius: 20px;
-   border-top-right-radius: 20px;
+
+/* =======================
+    Footer
+======================= */      
+.footer {
+   font-family: "Raleway", Arial, sans-serif;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   padding: 30px 0px 30px 60px;
 }
-        /* =======================
-           Footer
-         ======================= */       
-.ft-main {
-      box-sizing: border-box;
-      font-family: "Raleway", Arial, sans-serif;
-      margin: 0; 
-      padding: 20px 28px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
+
+.ft_main_column {
+   flex-grow: 2;
 }
-.ft-main-item {
-      padding: 20px;
-      min-width: 20px;
+
+h3.ft_title {
+   margin: 0;
+   padding: 0;
 }
-   ul {
-      list-style: none;
-      padding-left: 0;
+
+.footer {
+   background-color: #F2F2F2;
+   color: black;
+   line-height: 2;
+   display: flex;
+   flex-direction: row;
 }
-   footer {
-      background-color: #F2F2F2;
-      color: black;
-      line-height: 1.5;
-      display: flex;
-      min-height: 100vh;
-      flex-direction: row;
+
+.footer a {
+   text-decoration: none;
+   color: black;
+   padding: 0;
+   margin: 0;
 }
-   footer a {
-      text-decoration: none;
-      color: black;
+.footer_item a:hover {
+   color: blue;
+   padding: 0;
+   margin: 0;
 }
-   a:hover {
-      color: blue;
-}
-.container {
-   flex: 1; 
-}
+
+/* =======================
+    Media Queries
+======================= */
 
 /* On screens between 768 and 992 */
 @media (max-width: 768px)
@@ -516,7 +545,7 @@ a {
    padding: 0px 0px 50px 0px;
 }
 
-.navigation-bar {
+.navigation_bar {
    display: flex;
    flex-direction: column;
    justify-content: space-around;
@@ -524,7 +553,7 @@ a {
    width: 100vw;
 }
 
-.nav-links {
+.nav_links {
    justify-content: space-around;
    flex-grow: 1;
 }
@@ -536,7 +565,7 @@ a {
    border-bottom-color: #0065FC;
 }
 
-.flex-container {
+.flex_container {
    display: flex;
    flex-flow: column wrap;
    margin-top: 30px;
@@ -564,7 +593,7 @@ a {
    position: relative;
 }
 
-dot-icon {
+.dot_icon {
    padding: 12px 0px 0px 0px;
    text-align: center;
    text-decoration: none;
@@ -578,7 +607,7 @@ dot-icon {
    right: 0;
 }
 
-input {
+.search_bar {
    font-size: 16px;
    color: black;
    height: 42px;
@@ -589,7 +618,7 @@ input {
    border-radius: 10px;
 }
 
-button {
+.search_button {
    display: none;
 }
 
@@ -599,7 +628,7 @@ button {
    justify-content: flex-start;
 }
 
-.mag-icon {
+.mag_icon {
    background: #0065FC;
    color: white;
    border: none;
@@ -621,13 +650,13 @@ button {
    font-size: 12;
 }
 
-.nested-accommodations {
+.nested_accommodations {
    display: flex;
    justify-content: space-around;
    flex-direction: column;
 }
 
-.ft-main {
+.footer {
    flex-flow: column wrap; 
    align-content: flex-start; 
    justify-content: flex-start;
