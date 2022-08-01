@@ -27,8 +27,8 @@
     <nav class="navigation_bar">
       <img class="logo" src="images/logo/Booki.png" alt="Booki logo" width="100" height="100"></img>
       <div class="nav_links">
-        <a class="links" href="#accommodations_header">Accommodations</a>
-        <a class="links" href="#activities_header">Activities</a>
+        <div class="link_box"><a class="links" href="#accommodations_header">Accommodations</a></div>
+        <div class="link_box"><a class="links" href="#activities_header">Activities</a></div>
       </div>
     </nav>
   </header>
@@ -46,7 +46,8 @@
         </div>
       </div>
     <div class="filters">
-        <span class="filter_label">Filters</span>
+        <span class="filter_header">Filters</span>
+      <div class="filters_box">
         <div class="pillwrap">
             <div class="circle"><i class="fa-solid fa-money-bill-wave"></i></div>
             <span class="filter_label">Low cost</span>
@@ -64,9 +65,10 @@
             <span class="filter_label">Pets allowed</span>
         </div>
       </div>
+    </div>
       <div class="tooltip">
-        <div class="tooltip_icon"></div>
-        <i class="fa-solid fa-info"></i>
+        <div class="tooltip_icon">
+        <i class="fa-solid fa-info"></i></div>
         <span class="tooltip_capt">More than 500 accommodations are available in this city.</span>
       </div>
     </section>
@@ -229,45 +231,45 @@
   <div class="activities_container"></div>
     <section class="activities">
       <div id="activities_header"><h2>Activities in Marseille</h2></div>
-      <div class="nested-activities">
+      <div class="nested_activities">
         <div class="activity_card">
           <div class="activity_imgbox">
-          <img class="activity_img" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Marina full of sailboats and motorboats in front of French building facades, with Notre Dame in the distance."></img>
+          <img class="activity_img" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Marina full of sailboats and motorboats in front of French building facades."></img>
           </div>
         <span class="activity_card_header">Old Port</span>
         </div>
         <div class="activity_column">
-          <div class="activity_card">
-            <div class="activity_imgbox_small">
-              <img class="activity_img" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Marina full of sailboats and motorboats in front of French building facades, with Notre Dame in the distance."></img>
+          <div class="activity_card_upper">
+            <div class="activity_imgbox_upper">
+              <img class="activity_img" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Old, white sandstone fortress atop a rocky cliffside."></img>
             </div>
-          <span class="activity_card_header">Box 2</span>
+          <span class="activity_card_header">Pom&egrave;gues Fort</span>
           </div>
-          <div class="activity_card">
-            <div class="activity_imgbox_small">
-            <img class="activity_img" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Marina full of sailboats and motorboats in front of French building facades, with Notre Dame in the distance."></img>
+          <div class="activity_card_lower">
+            <div class="activity_imgbox_lower">
+            <img class="activity_img" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="An unfocused blue and gold telescope with the camera focused instead on a far-off island in dark blue water."></img>
             </div>
-          <span class="activity_card_header">Box 3</span>
+          <span class="activity_card_header">Frioul Island</span>
           </div>
         </div>
         <div class="activity_card">
           <div class="activity_imgbox">
-            <img class="activity_img" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Marina full of sailboats and motorboats in front of French building facades, with Notre Dame in the distance."></img>
+            <img class="activity_img" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Craggy mountain peak overlooking a lush and rocky coastline."></img>
           </div>
-          <span class="activity_card_header">Box 4</span>
+          <span class="activity_card_header">Calanques National Park</span>
         </div>
         <div class="activity_column">
           <div class="activity_card_upper">
-            <div class="activity_imgbox_small">
-              <img class="activity_img" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Marina full of sailboats and motorboats in front of French building facades, with Notre Dame in the distance."></img>
+            <div class="activity_imgbox_upper">
+              <img class="activity_img" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Light-colored buildings within a town crowd along a hillside leading up to a massive cathedral atop the hill."></img>
             </div>
-            <span class="activity_card_header">Box 5</span>
+            <span class="activity_card_header">Notre-Dame-de-la-Garde</span>
           </div>
           <div class="activity_card_lower">
-            <div class="activity_imgbox_small">
-              <img class="activity_img" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Marina full of sailboats and motorboats in front of French building facades, with Notre Dame in the distance."></img>
+            <div class="activity_imgbox_lower">
+              <img class="activity_img" src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="A magnificently scuplted fountain sits adorned by intricate walls and additional, smaller sculptures."></img>
             </div>
-            <span class="activity_card_header">Box 6</span>
+            <span class="activity_card_header">Longchamp Park</span>
           </div>
         </div>
       </div>
