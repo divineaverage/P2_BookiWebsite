@@ -17,6 +17,11 @@ body {
    padding: 0px 60px 0px 60px;
 }
 
+.nav_links {
+   display: flex;
+   flex-flow: row nowrap;
+}
+
 .logo {
    max-width: 100%;
    height: auto;
@@ -51,7 +56,14 @@ body {
 /* =======================
     Search and Filters
 ======================= */
-
+.search_container {
+   display: flex;
+   margin-right:60px;
+   margin-left: 60px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   line-height: 20px;
+}
 
 .search {
    display:flex;
@@ -180,7 +192,6 @@ body {
    margin-right: 10px;
  }
 
-
  .filter_label {
    display: flex;
    font-weight: 600;
@@ -220,7 +231,7 @@ body {
 /* ======================================
     Accommodations and Most Popular
 ====================================== */
-.flex_container {
+.main_container {
    display: flex;
    margin-right:60px;
    margin-left: 60px;
@@ -552,7 +563,11 @@ h3.ft_title {
 ======================= */
 @media (max-width: 768px) {
 
-.flex_container {
+.search_container {
+   flex-direction: column;
+}
+
+.main_container {
    flex-direction: column;
 }
 
@@ -582,8 +597,8 @@ h3.ft_title {
 }
 
 .nav_links {
-   display: flex;
-   flex-flow: row nowrap;
+   border-bottom-style: solid;
+   border-bottom-color: #F2F2F2;
 }
 
 .link_box {
@@ -591,6 +606,7 @@ h3.ft_title {
    width: 100%;
    height: 100%;
    text-align: center;
+   padding: 0px 0px 10px 0px;
 }
 
 .link_box:hover {
@@ -604,7 +620,7 @@ h3.ft_title {
     Search and Filters
 ======================= */
 
-.flex_container {
+.search_container {
    display: flex;
    flex-flow: column wrap;
    margin-right:30px;
@@ -619,7 +635,7 @@ h3.ft_title {
    flex-direction: column;
    flex-wrap: wrap;
    justify-content: flex-start;
-   line-height: 20px;
+   line-height: 24px;
    font-size: 16px;
 }
 
@@ -711,23 +727,31 @@ h3.ft_title {
  }
 
  /* ======================================
-    Accommodations and Most Popular
+    Accommodations
 ====================================== */
+.main_container {
+   display: flex;
+   margin: 0px;
+   line-height: 20px;
+}
 
 .accommodations {
-   line-height: 16;
-   font-size: 12;
+   order: 2;
+   width: 100%;
+   background-color: white;
 }
 
 #accommodations_header {
    margin-top: 0px;
-   margin-left: 30px;
+   margin-left: 0px;
    flex-shrink: 1;
 }
 
 .nested_accommodations {
    display: flex;
    flex-flow: column wrap;
+   width: 100%;
+   padding: 0px 0px 0px 0px;
 }
 
 .accommo_card {
@@ -737,9 +761,9 @@ h3.ft_title {
    background: white;
    border-radius: 20px;
    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-   padding: 5px 5px 0px 5px;
-   margin: 15px;
    flex: 0 1 auto; 
+   margin: 15px 0px 15px 0px;
+   padding: 0px;
 }
 
 .card_header {
@@ -759,6 +783,37 @@ h3.ft_title {
    display: flex;
    flex-direction: row;
    padding: 8px 10px 12px 10px;
+}
+
+.show_more {
+   font-weight: 600;
+   padding: 10px 0px 0px 0px;
+   text-decoration: none;
+   margin: 0px;
+}
+
+/* =======================
+    Most popular
+======================= */
+.most_popular {
+   order: 1;
+   margin: 0px;
+   padding: 0px;
+}
+
+/* =======================
+    Activities
+======================= */
+.activities_container {
+   display: flex;
+   flex-flow: column;
+   margin-right:0px;
+   margin-left: 0px;
+}
+
+.nested_activities {
+   display: flex;
+   flex-direction: column;
 }
 
 /* ======================================
