@@ -157,7 +157,7 @@ body {
    flex-wrap: wrap;
  }
 
- .pillwrap {
+ .low_wrap {
    display: flex;
    border-color: lightgrey;
    border-top-style: solid;
@@ -170,7 +170,61 @@ body {
    justify-content: flex-start;
  }
 
- .pillwrap:hover {
+ .low_wrap:hover {
+   background-color: #0065FC;
+   color: white;
+ }
+
+ .family_wrap {
+   display: flex;
+   border-color: lightgrey;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-width: 1px;
+   border-radius: 50px;
+   font-size: 16px;
+   white-space: nowrap;
+   justify-content: flex-start;
+ }
+
+ .family_wrap:hover {
+   background-color: #0065FC;
+   color: white;
+ }
+
+ .romantic_wrap {
+   display: flex;
+   border-color: lightgrey;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-width: 1px;
+   border-radius: 50px;
+   font-size: 16px;
+   white-space: nowrap;
+   justify-content: flex-start;
+ }
+
+ .romantic_wrap:hover {
+   background-color: #0065FC;
+   color: white;
+ }
+
+ .pets_wrap {
+   display: flex;
+   border-color: lightgrey;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-width: 1px;
+   border-radius: 50px;
+   font-size: 16px;
+   white-space: nowrap;
+   justify-content: flex-start;
+ }
+
+ .pets_wrap:hover {
    background-color: #0065FC;
    color: white;
  }
@@ -304,11 +358,12 @@ body {
    font-weight: 600;
 }
 
-.stars {
+.accommo_stars {
    display: flex;
    flex-direction: row;
    padding: 8px 10px 12px 10px;
 }
+
 .fa-star.full {
    color:#0065FC;
 }
@@ -348,7 +403,7 @@ body {
    justify-content: space-between;
 }
 
-.mostpop_header {
+#mostpop_header {
    margin-left: 30px;
 }
 
@@ -400,6 +455,12 @@ body {
 }
 .pop_pricing {
    font-weight: 600;
+}
+
+.pop_stars {
+   display: flex;
+   flex-direction: row;
+   padding: 8px 0px 12px 0px;
 }
 
 /* =======================
@@ -695,7 +756,7 @@ h3.ft_title {
 
 .filters {
    display: flex;
-   flex-wrap: wrap;
+   flex-flow: row wrap;
    flex-shrink: 1;
    margin-left: 30px;
    margin-right: 30px;
@@ -703,6 +764,7 @@ h3.ft_title {
 
 .filters_box {
    display: flex;
+   flex-flow: row wrap;
    margin-right: 0px;
 }
 
@@ -710,8 +772,22 @@ h3.ft_title {
    padding: 15px 0px 0px 5px;
 }
 
-.pillwrap {
-   flex-shrink: 1;
+.low_wrap {
+   order: 1;
+   max-width: 45%;
+}
+
+.family_wrap {
+   order: 3;
+}
+
+.romantic_wrap {
+   order: 2;
+   max-width: 45%;
+}
+
+.pets_wrap {
+   order: 4;
 }
 
 .tooltip {
@@ -725,6 +801,37 @@ h3.ft_title {
    margin-left: 10px;
    padding-top: 2px;
  }
+
+ /* =======================
+    Most popular
+======================= */
+.most_popular {
+   order: 1;
+   margin: 0px;
+   padding: 15px 30px 30px 30px;
+}
+
+#mostpop_header {
+   margin-left: 0px;
+   font-size: 14px;
+}
+
+.popular_card {
+   margin: 15px 0px 15px 0px;
+}
+
+
+.popcard_header {
+   font-weight: 600;
+   font-size: 14px;
+}
+.popcard_price {
+   padding: 10px 0px 15px 0px;
+   font-size: 12px;
+}
+.pop_pricing {
+   font-weight: 600;
+}
 
  /* ======================================
     Accommodations
@@ -745,6 +852,8 @@ h3.ft_title {
    margin-top: 0px;
    margin-left: 0px;
    flex-shrink: 1;
+   padding: 15px 30px 0px 30px;
+   font-size: 14px;
 }
 
 .nested_accommodations {
@@ -762,7 +871,7 @@ h3.ft_title {
    border-radius: 20px;
    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
    flex: 0 1 auto; 
-   margin: 15px 0px 15px 0px;
+   margin: 15px 15px 15px 15px;
    padding: 0px;
 }
 
@@ -789,16 +898,7 @@ h3.ft_title {
    font-weight: 600;
    padding: 10px 0px 0px 0px;
    text-decoration: none;
-   margin: 0px;
-}
-
-/* =======================
-    Most popular
-======================= */
-.most_popular {
-   order: 1;
-   margin: 0px;
-   padding: 0px;
+   margin-left: 15px;
 }
 
 /* =======================
@@ -814,6 +914,10 @@ h3.ft_title {
 .nested_activities {
    display: flex;
    flex-direction: column;
+}
+
+.activities {
+   margin: 0px;
 }
 
 /* ======================================
