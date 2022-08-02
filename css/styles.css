@@ -480,8 +480,7 @@ body {
    display: flex;
    min-height: 100%;
    flex-direction: column;
-   flex-wrap:wrap;
-   justify-content: flex-start;
+   flex-wrap: wrap;
    background-color: white;
    justify-content: space-around;
 }
@@ -630,6 +629,37 @@ h3.ft_title {
 
 .main_container {
    flex-direction: column;
+   margin: 0px;
+}
+
+.accommodations {
+   background-color: white;
+   margin: 0px;
+   padding: 15px;
+}
+
+.accommo_card {
+   flex: 1 0 33%; 
+}
+
+.most-popular {
+   margin-right: 0px;
+}
+
+#mostpop_header {
+   margin-left: 15px;
+}
+
+.popular_card {
+   width: 100%;
+}
+
+.popular_imgbox { 
+   width: 300px;
+}
+
+.popular_copy {
+   padding: 0px 20px 0px 45px;
 }
 
 /* =======================
