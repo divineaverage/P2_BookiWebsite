@@ -774,7 +774,7 @@ h3.ft_title {
    display: flex; 
    box-sizing: border-box;
    max-height: 125px;
-   max-width: 300px;
+   max-width: 400px;
    overflow: hidden; 
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
