@@ -632,6 +632,16 @@ h3.ft_title {
 
 .most_popular {
    padding: 15px;
+   justify-content: space-between;
+   flex-grow: 2;
+}
+
+.popular_imgbox {
+   height: 170px;
+}
+
+.popular_card {
+   max-height: 190px;
 }
 
 .nested_accommodations {
@@ -653,6 +663,10 @@ h3.ft_title {
 
 .pop_stars {
    padding: 2px 0px 2px 0px;
+}
+
+.nested_activities {
+   margin-bottom: 0px;
 }
 
 }
