@@ -630,6 +630,14 @@ h3.ft_title {
    margin-bottom: 30px;
 }
 
+.most_popular {
+   padding: 15px;
+}
+
+.nested_accommodations {
+   padding: 0px;
+}
+
 .popular_imgbox {
    width: 100px;
 }
@@ -681,6 +689,19 @@ h3.ft_title {
    flex: 1 0 33%; 
 }
 
+.accommodations {
+   width: 100%;
+   background-color: white;
+}
+
+.accommo_card {
+   flex: 1 0 33%; 
+}
+
+ /* =======================
+    Most popular
+======================= */
+
 .fa-star.black {
    font-size: 40;
    padding: 25px 5px 0px 0px;
@@ -699,28 +720,15 @@ h3.ft_title {
 }
 
 .popular_copy {
-   padding: 0px 20px 0px 45px;
-}
-
-.accommodations {
-   width: 100%;
-   background-color: white;
-}
-
-.accommo_card {
-   flex: 1 0 33%; 
-}
-
- /* =======================
-    Most popular
-======================= */
-.popular_copy {
-   padding: 0px 10px 0px 15px;
+   padding: 0px 15px 0px 25px;
 }
 
 /* =======================
     Activities
 ======================= */
+.activities_container {
+   margin: 30px 30px 30px 30px;
+}
 #activities_header {
    margin-top: 15px;
    margin-bottom: 30px;
@@ -729,7 +737,7 @@ h3.ft_title {
 .activity_imgbox {
    box-sizing: border-box;
    height: 350px;
-   max-width: 300px;
+   max-width: 400px;
    overflow: hidden; 
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
@@ -739,7 +747,7 @@ h3.ft_title {
    display: flex; 
    box-sizing: border-box;
    max-height: 150px;
-   max-width: 300px;
+   max-width: 400px;
    overflow: hidden; 
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
