@@ -763,6 +763,13 @@ h3.ft_title {
 /* =======================
     Activities
 ======================= */
+.activity_card {
+   margin-bottom: 20px;
+}
+
+.activity_card_upper {
+   margin-top: 20px;
+}
 
 .activity_imgbox {
    box-sizing: border-box;
