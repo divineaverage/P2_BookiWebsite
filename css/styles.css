@@ -565,6 +565,10 @@ body {
    width: 100%;
 }
 
+.activity_card_upper:hover {
+   cursor: pointer;
+ }
+
 .activity_card_lower {
    display: flex;
    box-sizing: border-box;
@@ -574,6 +578,10 @@ body {
    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
    width: 100%;
 }
+
+.activity_card_lower:hover {
+   cursor: pointer;
+ }
 
 .activity_imgbox {
    box-sizing: border-box;
