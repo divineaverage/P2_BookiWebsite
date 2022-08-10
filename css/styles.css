@@ -621,6 +621,16 @@ h3.ft_title {
 .activity_card {
    width: 46%;
 }
+
+.activity_card {
+   margin-bottom: 30px;
+}
+
+.activity_column {
+   margin-bottom: 30px;
+}
+
+
 }
 
 /* =======================
@@ -697,20 +707,14 @@ h3.ft_title {
 ======================= */
 #activities_header {
    margin-top: 15px;
-   margin-bottom: 15px;
 }
 
-.activity_card {
-   margin-bottom: 20px;
-}
 
-.activity_card_upper {
-   margin-top: 20px;
-}
+
 
 .activity_imgbox {
    box-sizing: border-box;
-   height: 375px;
+   height: 350px;
    max-width: 300px;
    overflow: hidden; 
    border-top-left-radius: 20px;
@@ -720,7 +724,7 @@ h3.ft_title {
 .activity_imgbox_upper {
    display: flex; 
    box-sizing: border-box;
-   max-height: 175px;
+   max-height: 150px;
    max-width: 300px;
    overflow: hidden; 
    border-top-left-radius: 20px;
@@ -730,7 +734,7 @@ h3.ft_title {
 .activity_imgbox_lower {
    display: flex; 
    box-sizing: border-box;
-   max-height: 100px;
+   max-height: 125px;
    max-width: 300px;
    overflow: hidden; 
    border-top-left-radius: 20px;
