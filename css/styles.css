@@ -530,8 +530,7 @@ body {
    justify-content: space-between;
    height: 100%;
    max-width: 100%;
-   margin: 15px 0px 45px 0px;
-   gap: 20px;
+   margin: 15px 10px 45px 0px;
 }
 
 .activity_column {
@@ -549,7 +548,7 @@ body {
    border-radius: 20px;
    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
    height: 100%;
-   width: 22%;
+   width: 23%;
 }
 
 .activity_card:hover {
