@@ -630,6 +630,22 @@ h3.ft_title {
    margin-bottom: 30px;
 }
 
+.popular_imgbox {
+   width: 100px;
+}
+
+.popular_copy {
+   padding: 0px 3px 0px 3px;
+   margin: 10px;
+}
+
+.popcard_price {
+   padding: 3px 0px 3px 0px;
+}
+
+.pop_stars {
+   padding: 2px 0px 2px 0px;
+}
 
 }
 
@@ -707,10 +723,8 @@ h3.ft_title {
 ======================= */
 #activities_header {
    margin-top: 15px;
+   margin-bottom: 30px;
 }
-
-
-
 
 .activity_imgbox {
    box-sizing: border-box;
@@ -923,7 +937,7 @@ h3.ft_title {
 .most_popular {
    order: 1;
    margin: 0px;
-   padding: 30px;
+   padding: 10px 30px 10px 30px;
 }
 
 .h2 {
@@ -932,15 +946,16 @@ h3.ft_title {
 
 #mostpop_header {
    margin-left: 0px;
+   
 }
 
 .popular_card {
-   margin: 5px 0px 5px 0px;
+   margin: 20px 0px 20px 0px;
 }
 
 .popular_imgbox { 
    height: 140px;
-   width: 120px;
+   width: 140px;
 }
 
 .popular_copy {
@@ -969,7 +984,8 @@ h3.ft_title {
 .main_container {
    display: flex;
    margin: 0px;
-   line-height: 20px;
+   line-height: 14px;
+   font-size: 14px;
 }
 
 .accommodations {
@@ -983,7 +999,7 @@ h3.ft_title {
    margin-left: 0px;
    flex-shrink: 1;
    padding: 0px 0px 0px 15px;
-   font-size: 14px;
+
 }
 
 .nested_accommodations {
@@ -1001,7 +1017,7 @@ h3.ft_title {
    border-radius: 20px;
    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
    flex: 0 1 auto; 
-   margin: 15px 15px 15px 15px;
+   margin: 15px;
    padding: 0px;
 }
 
