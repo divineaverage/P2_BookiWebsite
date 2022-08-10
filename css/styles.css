@@ -715,6 +715,9 @@ h3.ft_title {
  /* =======================
     Most popular
 ======================= */
+.most_popular {
+   padding: 0px 30px 30px 30px;
+}
 
 .fa-star.black {
    font-size: 40;
