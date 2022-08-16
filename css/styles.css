@@ -896,6 +896,10 @@ h3.ft_title {
    border-radius: 10px;
 }
 
+.search_bar[type=text] {
+   margin: 0px 20px 0px 50px;
+ }
+
 .search_button {
    display: none;
 }
