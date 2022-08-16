@@ -392,6 +392,14 @@ body {
    padding: 25px 2px 0px 0px;
 }
 
+.pop_cards_flexbox {
+   display: flex;
+   box-sizing: border-box;
+   height: 100%;
+   align-items: stretch;
+   flex-direction: column;
+}
+
 .popular_card {
    display: flex;
    box-sizing: border-box;
