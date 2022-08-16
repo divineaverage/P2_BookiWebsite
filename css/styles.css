@@ -83,7 +83,7 @@ body {
 }
 
 
-.wrapper {
+.search_wrapper {
    display: flex;
    min-width: 100px;
    max-width: 400px;
